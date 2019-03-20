@@ -1,6 +1,9 @@
---- kernel-source/arch/arm/boot/dts/aspeed-bmc-opp-olympus.dts	1969-12-31 19:00:00.000000000 -0500
-+++ kernel-source_bk/arch/arm/boot/dts/aspeed-bmc-opp-olympus.dts	2018-07-27 17:24:34.152655984 -0400
-@@ -0,0 +1,221 @@
+diff --git a/arch/arm/boot/dts/aspeed-bmc-opp-olympus.dts b/arch/arm/boot/dts/aspeed-bmc-opp-olympus.dts
+new file mode 100644
+index 0000000..a55b371
+--- /dev/null
++++ b/arch/arm/boot/dts/aspeed-bmc-opp-olympus.dts
+@@ -0,0 +1,217 @@
 +// SPDX-License-Identifier: GPL-2.0+
 +/dts-v1/;
 +
@@ -126,8 +129,8 @@
 +};
 +&i2c1 {
 +	status = "okay";
-+	tmp423@4c {
-+		compatible = "ti,tmp423";
++	tmp421@4c {
++		compatible = "ti,tmp421";
 +		reg = <0x4c>;
 +	};
 +};
@@ -157,17 +160,13 @@
 +
 +&i2c6 {
 +	status = "okay";
-+	tmp423@4c {
-+		compatible = "ti,tmp423";
++	tmp421@4c {
++		compatible = "ti,tmp421";
 +		reg = <0x4c>;
 +	};
 +};
 +
 +&i2c7 {
-+	status = "okay";
-+};
-+
-+&i2c8 {
 +	status = "okay";
 +};
 +
